@@ -1,0 +1,22 @@
+{
+  "elements":
+  [
+
+    { "type": "Label", "label": "Fussball-Liga auswählen:"},
+    { "name": "LigaSelection", "type": "Select", "caption": "Auswahl der Liga",
+       "options": [
+                    { "label": "1. Bundesliga", "value": "Liga1" },
+                    { "label": "2. Bundesliga", "value": "Liga2" },
+                    { "label": "3. Liga", "value": "Liga3" }
+       ]},
+    { "type": "IntervalBox", "name": "Intervall", "caption": "Sekunden" },
+    { "name": "FarbenAktiv", "type": "CheckBox", "caption": "Farbige Darstellung" }
+
+  ],
+  "actions":
+  [
+
+    { "type": "Button", "label": "Update", "onClick": "BLT_Update($id);" }
+
+  ]
+}
