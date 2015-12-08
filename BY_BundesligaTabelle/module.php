@@ -15,7 +15,7 @@ class BundesligaTabelle extends IPSModule
         //You cannot use variables here. Just static values.
         $this->RegisterPropertyString("LigaSelection", "Liga1");
         $this->RegisterPropertyBoolean("FarbenAktiv", true);
-        $this->RegisterPropertyInteger("Intervall", 900);
+        $this->RegisterPropertyInteger("Intervall", 1800);
         $this->RegisterTimer("UpdateTabelle", 0, 'BLT_Update($_IPS[\'TARGET\']);');
     }
 
