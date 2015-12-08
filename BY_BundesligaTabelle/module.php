@@ -278,9 +278,9 @@ class BundesligaTabelle extends IPSModule
     private function SetValueString($Ident, $Value)
     {
     		$id = $this->GetIDforIdent($Ident);
-    		if (GetValueString($id) <> $Value)
+    		if (SetValueString($id) <> $Value)
     		{
-    				SetValueInteger($id, $Value);
+    				SetValueString($id, $Value);
     				return true;
     		}
     		return false;
