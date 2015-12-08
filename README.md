@@ -1,6 +1,3 @@
-# !!! TEST !!! NICHT FERTIG !!! TEST !!! NICHT VERWENDEN !!!
----
-
 ### IP-Symcon Modul // Bundesliga Tabelle
 ---
 
