@@ -35,7 +35,7 @@ Einstellungsmöglichkeiten in der Instanz:
 `git://github.com/BayaroX/BY_BundesligaTabelle.git`
 
 Die neue Instanz findet ihr dort, wo ihr sie angelegt habt.
-Danach muss nur noch die Variable "Tabelle - ..." in euer WebFront verlinkt werden.
+Danach muss nur noch die Variable "Tabelle" (unterhalb der Instanz) in euer WebFront verlinkt werden.
 
 
 ## 4. Befehlsreferenz
