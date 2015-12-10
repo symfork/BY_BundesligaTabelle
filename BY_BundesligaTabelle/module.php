@@ -190,18 +190,24 @@ class BundesligaTabelle extends IPSModule
 				$HTML_CSS_Style = '';
 				}
 				else {
-						if ($this->ReadPropertyString("TextFarbcode") == "FFFFFF") {
+						if (substr($this->ReadPropertyString("TextFarbcode"), 0, 1) == "F") {
 								$BackColor = "000000";
+						}
+						elseif (substr($this->ReadPropertyString("TextFarbcode"), 0, 1) == "0") {
+							
+								$BackColor = "FFFFFF";
+								$FontColorTitle = "FFFFFF";
 						}
 						else {
 							
 								$BackColor = "FFFFFF";
+								$FontColorTitle = "FFFFFF";
 						}
 				$HTML_CSS_Style = '<style type="text/css">
 				.bt {border-collapse;border-spacing:0;}
 				.bt td {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 				.bt th {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;font-weigth:normal;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.bt .tb-title{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#000000;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
+				.bt .tb-title{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#000000;color:#FontColorTitle;text-align:center}
 				.bt .tb-cl{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#32CB00;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-clqual{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#009901;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-eurol{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#3166FF;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
