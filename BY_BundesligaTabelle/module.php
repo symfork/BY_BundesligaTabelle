@@ -190,10 +190,10 @@ class BundesligaTabelle extends IPSModule
 				$HTML_CSS_Style = '';
 				}
 				else {
-						if (substr($this->ReadPropertyString("TextFarbcode"), 0, 1) == "F") {
+						if ($this->ReadPropertyString("TextFarbcode") == "FFFFFF") {
 								$BackColor = "000000";
 						}
-						elseif (substr($this->ReadPropertyString("TextFarbcode"), 0, 1) == "0") {
+						elseif ($this->ReadPropertyString("TextFarbcode") == "000000") {
 							
 								$BackColor = "FFFFFF";
 								$FontColorTitle = "FFFFFF";
