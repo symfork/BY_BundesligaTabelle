@@ -190,15 +190,22 @@ class BundesligaTabelle extends IPSModule
 				$HTML_CSS_Style = '';
 				}
 				else {
+						if ($this->ReadPropertyString("TextFarbcode") == "FFFFFF") {
+								$BackColor = "000000";
+						}
+						else {
+							
+								$BackColor = "FFFFFF";
+						}
 				$HTML_CSS_Style = '<style type="text/css">
 				.bt {border-collapse;border-spacing:0;}
-				.bt td {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#'.$this->ReadPropertyString("TextFarbcode").';padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-				.bt th {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#'.$this->ReadPropertyString("TextFarbcode").';font-weigth:normal;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.bt td {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+				.bt th {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;font-weigth:normal;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 				.bt .tb-title{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#000000;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-cl{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#32CB00;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-clqual{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#009901;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-eurol{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#3166FF;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
-				.bt .tb-normal{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#FFFFFF;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
+				.bt .tb-normal{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#'.$BackColor.';color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-abstgrel{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#FD6864;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				.bt .tb-abstg{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#FE0000;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 				</style>';
