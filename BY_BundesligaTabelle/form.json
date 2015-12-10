@@ -9,10 +9,10 @@
                     { "label": "2. Bundesliga", "value": "Liga2" },
                     { "label": "3. Liga", "value": "Liga3" }
        ]},
-    { "type": "Label", "label": "--------------------------------------------------------------" },
+    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "type": "Label", "label": "Intervall in welchem die Tabelle aktualisiert wird:" },
     { "type": "IntervalBox", "name": "Intervall", "caption": "Sekunden" },
-    { "type": "Label", "label": "--------------------------------------------------------------" },
+    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "name": "FarbenAktiv", "type": "CheckBox", "caption": "Farbige Darstellung" },
     { "type": "Label", "label": "Farbcode der Schriftfarbe muss im HEX-Format eingegeben werden:" },
     { "name": "TextFarbcode", "type": "ValidationTextBox", "caption": "Schriftfarbe" },
