@@ -21,6 +21,8 @@ Einstellungsmöglichkeiten in der Instanz:
 - Liga (1. Bundesliga, 2. Bundesliga, 3. Liga)
 - Update Intervall der Tabelle (in Sekunden)
 - Farbige Darstellung der Tabelle (aktiv / inaktiv)
+- Schriftfarbe (im HEX Format)
+- Schriftgröße (Pixel)
 
 
 ## 2. Systemanforderungen
@@ -46,3 +48,7 @@ Aktualisiert die Fussball-Tabelle in der Variable.
 ## 5. Changelog
 Version 1.0:
   - Erster Release
+
+Version 1.1:
+  - NEU # Schriftfarbe einstellbar in der Instanz
+  - NEU # Schriftgröße einstellbar in der Instanz
