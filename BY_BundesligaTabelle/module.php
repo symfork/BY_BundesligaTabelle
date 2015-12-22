@@ -58,35 +58,16 @@ class BundesligaTabelle extends IPSModule
 
 				
 				$page = @file_get_contents($BLtabSportde_URL);
-				if ($page === false)
+				if (($page === false) OR ($page == "") OR (strlen($page) < 100))
 				{
 						throw new Exception("Es konnten keine Daten von der Webseite geladen werden!", E_USER_WARNING);
 			  }
 			  
-			  
-				/*
-				$curl = curl_init($BLtabSportde_URL);
-				curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-				curl_setopt($curl, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
-				$page = curl_exec($curl);
-				
-			
-			
-				if(curl_errno($curl)) // Error-Check
-				{
-				    echo 'Error: ' . curl_error($curl);
-				    exit;
-				}
-				curl_close($curl);
-				*/
-				
-			
 				$DOM = new DOMDocument;
-			
 			
 				libxml_use_internal_errors(true);
 			
-				if (!$DOM->loadHTML($page))
+				if (!@$DOM->loadHTML($page))
 				    {
 				        $errors="";
 				        foreach (libxml_get_errors() as $error)  {
