@@ -202,7 +202,7 @@ class BundesligaTabelle extends IPSModule
 				$TitelAR = array("Platz","Verein","Spiele","S","U","N","TV","TDiff","Punkte");  // Hier könnt ihr die Überschriften der Spalten ändern
 				$HTML = '<html>'.$HTML_CSS_Style;
 				$HTML .= '<table class="bt">';
-				$HTML .= '<tr><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[0].'</th><th class="tb-title">'.$TitelAR[1].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[2].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[3].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[4].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[5].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[6].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[7].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[8].'</th></tr>';
+				$HTML .= '<tr><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[0].'</th><th class="tb-title" colspan="2">'.$TitelAR[1].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[2].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[3].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[4].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[5].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[6].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[7].'</th><th class="tb-title'.$this->InstanceID.'">'.$TitelAR[8].'</th></tr>';
 				
 				// Tabelle der 1. Liga generieren
 				if ($LigaAuswahl == "Liga1") {
