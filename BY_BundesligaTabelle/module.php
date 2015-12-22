@@ -187,7 +187,7 @@ class BundesligaTabelle extends IPSModule
 						.bt {border-collapse;border-spacing:0;}
 						.bt td'.$this->InstanceID.' {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 						.bt th'.$this->InstanceID.' {font-family:Arial, sans-serif;font-size:'.$this->ReadPropertyString("TextSize").'px;color:#FFFFFF;font-weigth:normal;padding:1px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-						.bt .tb-title'.$this->InstanceID.'{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#000000;color:#FFFFFF;text-align:center}
+						.bt .tb-title'.$this->InstanceID.'{font-size:'.$this->ReadPropertyString("TextSize").'px;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 						.bt .tb-cl'.$this->InstanceID.'{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#32CB00;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 						.bt .tb-clqual'.$this->InstanceID.'{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#009901;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
 						.bt .tb-eurol'.$this->InstanceID.'{font-size:'.$this->ReadPropertyString("TextSize").'px;background-color:#3166FF;color:#'.$this->ReadPropertyString("TextFarbcode").';text-align:center}
