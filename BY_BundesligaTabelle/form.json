@@ -2,6 +2,7 @@
   "elements":
   [
 
+    { "type": "Label", "label": "##### BundesligaTabelle v1.1 (22.12.2015 11.15Uhr) #####" },
     { "type": "Label", "label": "Fussball-Liga auswählen:"},
     { "name": "LigaSelection", "type": "Select", "caption": "Auswahl der Liga",
        "options": [
