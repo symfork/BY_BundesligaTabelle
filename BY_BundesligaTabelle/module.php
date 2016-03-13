@@ -31,7 +31,8 @@ class BundesligaTabelle extends IPSModule
         parent::ApplyChanges();
         
         //Variable erstellen
-        $this->RegisterVariableString("HTMLBoxTabelle", "Tabelle", "~HTMLBox");
+        $HTMLBox_VarID = $this->RegisterVariableString("HTMLBoxTabelle", "Tabelle", "~HTMLBox");
+        IPS_SetIcon($HTMLBox_VarID, "Database");
         
         $this->Update();
         $this->SetTimerInterval("UpdateTabelle", $this->ReadPropertyInteger("Intervall"));
